@@ -1,0 +1,8 @@
+.fade-to-black {
+    display: none;
+  }
+  
+  .fade-to-black.visible {
+    display: block;
+  }
+  
