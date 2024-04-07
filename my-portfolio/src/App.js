@@ -2,8 +2,8 @@ import React from 'react';
 import Header from "./components/Header";
 // import FadeToBlack from './components/FadeToBlack';
 import HomePage from './pages/HomePage';
-import PortfolioPage from './components/PortfolioPage';
-import AboutMePage from './components/AboutMePage';
+import PortfolioPage from './pages/PortfolioPage';
+import AboutMePage from './pages/AboutMePage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {

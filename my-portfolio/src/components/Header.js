@@ -1,78 +1,66 @@
 import * as React from "react";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Link } from 'react-router-dom'; // Import Link from React Router
-import "../fonts/fonts.css"; // Import the CSS file
+import { Link } from 'react-router-dom';
+import "../fonts/fonts.css";
 
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-/* The below is wrong, it calls the wrong properties.
-const theme = createTheme({
-    components: {
-        MuiButton: {
-            style: {
-                textTransform: 'none',
-            },
-        },
-    },
-});
-*/
-
-const theme = createTheme({
-    components: {
-        MuiButton: {
-            styleOverrides: {
-                root: {
-                    textTransform: 'lowercase',
-                },
-            },
-        },
-    },
-});
-
 
 export default function Header() {
+    const [activeTab, setActiveTab] = React.useState('about-me');
+
+    const handleTabClick = (tabName) => {
+        setActiveTab(tabName);
+    };
+
     return (
         <AppBar 
             position="fixed"
             sx={{
-                backgroundColor: '#EBE9DD',
+                backgroundColor: 'transparent',
                 boxShadow: 'none',
-                // borderBottom: '1px solid #ccc',
-                zIndex: 1000, // Ensure it's above other content
-                // backdropFilter:"blur(20px)"
+                zIndex: 1000,
             }}
         >
             <Toolbar>
                 <Typography
-                    variant="h6"
+                    variant="h5"
                     component={Link}
                     to="/"
-                    sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: '#375879', textDecoration: 'none' }}
+                    sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato Medium', color: 'black', textDecoration: 'none', borderBottom: activeTab === 'eric\'s website' ? 'none' : 'none'  }}
+                    onClick={() => handleTabClick('eric\'s website')}
                 >
-                    <span style={{ fontWeight: 'bold' }}>Hello</span> my name is Eric
+                    <span style={{ fontWeight: 'bold' }}>eric's website</span>
                 </Typography>
                 <Link
                     to="/about-me"
-                    style={{ textDecoration: "none", color: "#375879" }}
+                    style={{ textDecoration: "none", color: "black" }}
                 >
-                    <ThemeProvider theme={theme}>
-                        <Button color="inherit">about me.</Button>
-                    </ThemeProvider>
+                    <Typography 
+                        style={{ fontFamily: 'Creato', fontSize: '1.1rem', borderBottom: activeTab === 'about-me' ? '1px solid black' : 'none' }} 
+                        onClick={() => handleTabClick('about-me')}
+                    >
+                        about me.
+                    </Typography>
                 </Link>
                 <Link
                     to="/my-portfolio"
-                    style={{ textDecoration: "none", color: "#375879" }}
+                    style={{ textDecoration: "none", color: "black" }}
                 >
-                    <ThemeProvider theme={theme}>
-                        <Button color="inherit">portfolio.</Button>
-                    </ThemeProvider>
+                    <Typography 
+                        style={{ fontFamily: 'Creato', fontSize: '1.1rem', borderBottom: activeTab === 'my-portfolio' ? '1px solid black' : 'none', marginLeft: '25px'  }} 
+                        onClick={() => handleTabClick('my-portfolio')}
+                    >
+                        design portfolio.
+                    </Typography>
                 </Link>
-                <a href="https://shorturl.at/HTYZ8" style={{ textDecoration: 'none', color: '#375879' }}>
-                    <ThemeProvider theme={theme}>
-                        <Button color="inherit">resume.</Button>
-                    </ThemeProvider>
+                <a href="https://shorturl.at/HTYZ8" style={{ textDecoration: 'none', color: 'black', marginLeft: '25px' }}>
+                    <Typography 
+                        style={{ fontFamily: 'Creato', fontSize: '1.1rem' }} 
+                        onClick={() => handleTabClick('resume')}
+                    >
+                        resume.
+                    </Typography>
                 </a>
             </Toolbar>
         </AppBar>

@@ -2,6 +2,16 @@
 
 @font-face {
     font-family: 'Creato';
+    src: local('Creato'), url('CreatoDisplay-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Creato Medium';
     src: local('Creato'), url('CreatoDisplay-Medium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Apple-Garamond';
+    src: local('Apple-Garamond'), url('AppleGaramond.ttf') format('truetype');
 }
   
