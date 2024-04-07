@@ -7,7 +7,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 
 export default function Header() {
-    const [activeTab, setActiveTab] = React.useState('about-me');
+    const [activeTab, setActiveTab] = React.useState('eric\'s website');
 
     const handleTabClick = (tabName) => {
         setActiveTab(tabName);
