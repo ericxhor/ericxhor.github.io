@@ -44,7 +44,7 @@ function PortfolioPage() {
                 01
               </Typography>
 
-              <Link to='https://shorturl.at/eosvE' target="_blank" rel="noopener noreferrer"></Link>
+              <Link to='https://shorturl.at/eosvE' target="_blank" rel="noopener noreferrer">
                 <img src={macq} style={{ width: '100%', marginTop: '10px' }}  alt='invoice creation app'/>
               </Link>
               <Typography
