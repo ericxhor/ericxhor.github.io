@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8446c1df.css",
+    "main.js": "/static/js/main.d364b98f.js",
+    "static/js/453.41811d64.chunk.js": "/static/js/453.41811d64.chunk.js",
+    "static/media/slopes.jpg": "/static/media/slopes.5acde0ea4b448bedf5f9.jpg",
+    "static/media/seg1-1.jpg": "/static/media/seg1-1.c0b591b1a06767a6ad6a.jpg",
+    "static/media/opera-2.jpg": "/static/media/opera-2.05fca04b6120fa698c17.jpg",
+    "static/media/seg3-1.jpg": "/static/media/seg3-1.5f5779fbc5e1495ee0fb.jpg",
+    "static/media/seg3-2.jpg": "/static/media/seg3-2.16e7c0c41ae64f64a840.jpg",
+    "static/media/wallpaper.jpg": "/static/media/wallpaper.df57b1b9e996f0d63ab0.jpg",
+    "static/media/cse.jpg": "/static/media/cse.ebf4506532bab5572453.jpg",
+    "static/media/book.jpg": "/static/media/book.224874984d5f938a7239.jpg",
+    "static/media/seg3-3.jpg": "/static/media/seg3-3.224874984d5f938a7239.jpg",
+    "static/media/seg1-2.JPG": "/static/media/seg1-2.63d258dfb518754a39c7.JPG",
+    "static/media/macq.png": "/static/media/macq.a03c2aecf5577c9b7335.png",
+    "static/media/seg3-4.jpg": "/static/media/seg3-4.79986ed6acac590a64e7.jpg",
+    "static/media/art.jpg": "/static/media/art.2700637b7bafcc57b07e.jpg",
+    "static/media/cambodia.jpg": "/static/media/cambodia.248ea9c38fb8ba558c0b.jpg",
+    "static/media/cows.JPG": "/static/media/cows.83ce6c5d93a13d2c6e24.JPG",
+    "static/media/doggy.JPG": "/static/media/doggy.92b6aa95eec93196327a.JPG",
+    "static/media/nab.JPG": "/static/media/nab.8698dd061730ed06e345.JPG",
+    "static/media/hecs.png": "/static/media/hecs.83ea1d06d02cb05b00e8.png",
+    "static/media/tuber.JPG": "/static/media/tuber.5a82c8bb6a87d6142a05.JPG",
+    "static/media/paper-bg.jpg": "/static/media/paper-bg.be347678f928ecb7630f.jpg",
+    "static/media/CreatoDisplay-Regular.otf": "/static/media/CreatoDisplay-Regular.6d28723c4e0b525a515f.otf",
+    "static/media/CreatoDisplay-Medium.otf": "/static/media/CreatoDisplay-Medium.ee677d4fa2edd853d112.otf",
+    "static/media/AppleGaramond.ttf": "/static/media/AppleGaramond.0ae25b7cfb9d8a1385d4.ttf",
+    "static/media/tsg.JPG": "/static/media/tsg.15b04869c99e02996018.JPG",
+    "index.html": "/index.html",
+    "main.8446c1df.css.map": "/static/css/main.8446c1df.css.map",
+    "main.d364b98f.js.map": "/static/js/main.d364b98f.js.map",
+    "453.41811d64.chunk.js.map": "/static/js/453.41811d64.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8446c1df.css",
+    "static/js/main.d364b98f.js"
+  ]
+}
