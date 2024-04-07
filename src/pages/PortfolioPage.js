@@ -44,7 +44,9 @@ function PortfolioPage() {
                 01
               </Typography>
 
-              <img src={macq} style={{ width: '100%', marginTop: '10px' }}  alt='invoice creation app'/>
+              <Link to='https://shorturl.at/eosvE' target="_blank" rel="noopener noreferrer"></Link>
+                <img src={macq} style={{ width: '100%', marginTop: '10px' }}  alt='invoice creation app'/>
+              </Link>
               <Typography
                 variant="h5"
                 component="div"
@@ -56,7 +58,7 @@ function PortfolioPage() {
 
             {/* Column Two */}
             <Grid item xs={4}>
-              <Link to='https://shorturl.at/yKT24' target="_blank" rel="noopener noreferrer">
+              <Link to='https://shorturl.at/kxJ67' target="_blank" rel="noopener noreferrer">
                 <img src={tuber}  alt="tuber" style={{ maxWidth: '100%' }} />
               </Link>
               <Typography
@@ -76,7 +78,9 @@ function PortfolioPage() {
                 04
               </Typography>
 
-              <img src={tsg} alt="tsg-case-comp" style={{ maxWidth: '100%', marginTop: '10px' }} />
+              <Link to='https://shorturl.at/axWY6' target="_blank" rel="noopener noreferrer">
+                <img src={tsg} alt="tsg-case-comp" style={{ maxWidth: '100%', marginTop: '10px' }} />
+              </Link>
               <Typography
                 variant="h5"
                 component="div"
@@ -88,7 +92,9 @@ function PortfolioPage() {
 
             {/* Column Three */}
             <Grid item xs={4}>
-              <img src={cse} alt="csesoc-banners" style={{ maxWidth: '75%' }} />
+              <Link to='https://shorturl.at/eKNY9' target="_blank" rel="noopener noreferrer">
+                <img src={cse} alt="csesoc-banners" style={{ maxWidth: '75%' }} />
+              </Link>
               <Typography
                 variant="h5"
                 component="div"
@@ -97,7 +103,9 @@ function PortfolioPage() {
                 06
               </Typography>
 
-              <img src={wallpaper} alt="moodboard!" style={{ width: '75%', marginTop: '10px' }} />
+              <Link to='https://shorturl.at/wCDFM' target="_blank" rel="noopener noreferrer">
+                <img src={wallpaper} alt="moodboard!" style={{ width: '75%', marginTop: '10px' }} />
+              </Link>
               <Typography
                 variant="h5"
                 component="div"
