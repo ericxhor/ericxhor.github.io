@@ -32,6 +32,13 @@ function HeroSection() {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
+  useEffect(() => {
+    images.forEach(image => {
+      const img = new Image();
+      img.src = image;
+    });
+  }, []);
+
   return (
     <Box
       className="home-content"
