@@ -73,7 +73,7 @@ function AboutMePage() {
           <>
             <Grid item xs={12} style={{display: "flex", flexDirection: 'column', alignItems: "center", justifyItems: 'center'}}>
               <Typography
-                variant="h2"
+                variant="h3"
                 component="div"
                 sx={{ flexGrow: 1, textAlign: 'center', fontFamily: 'Creato', color: 'black', marginBottom: '25px', marginTop: '50px'}}
               >
