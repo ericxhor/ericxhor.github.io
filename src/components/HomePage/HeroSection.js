@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
 import bg from "../../images/banner-temp.png";
-import "../../fonts/fonts.css"; // Import the CSS file
+import "../../fonts/fonts.css";
 
 function HeroSection() {
   return (

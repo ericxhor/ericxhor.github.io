@@ -54,14 +54,17 @@ export default function Header() {
                         design portfolio.
                     </Typography>
                 </Link>
-                <a href="https://shorturl.at/HTYZ8" style={{ textDecoration: 'none', color: 'black', marginLeft: '25px' }}>
+                <Link
+                    to="/logs"
+                    style={{ textDecoration: "none", color: "black" }}
+                >
                     <Typography 
-                        style={{ fontFamily: 'Creato', fontSize: '1.1rem' }} 
-                        onClick={() => handleTabClick('resume')}
+                        style={{ fontFamily: 'Creato', fontSize: '1.1rem', borderBottom: activeTab === 'contact-me' ? '1px solid black' : 'none', marginLeft: '25px'  }} 
+                        onClick={() => handleTabClick('contact-me')}
                     >
-                        resume.
+                        contact me.
                     </Typography>
-                </a>
+                </Link>
             </Toolbar>
         </AppBar>
     );

@@ -4,22 +4,28 @@ import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
 
 import bg from "../../images/paper-bg.jpg";
+
 import cows from "../../images/HomePage/cows.JPG";
 import opera from "../../images/HomePage/opera-2.jpg";
 import slopes from "../../images/HomePage/slopes.jpg";
 import art from "../../images/HomePage/art.jpg";
 import book from "../../images/HomePage/book.jpg";
+import room from "../../images/HomePage/room.jpg";
+import beach from "../../images/HomePage/beach.JPG";
+import timmy from "../../images/HomePage/timmy.jpg";
 
 function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [cows, opera, book, slopes, art];
+  const images = [cows, opera, book, slopes, beach, art, room, timmy];
   const captions = [
     `Cows, from camp.`,
     `Sydney, from a ferry.`,
     `Interesting... book.`,
-    // `Dominic Fike <3.`,
     `Perisher, '23.`,
-    `Matisse Exhibit, '22.`
+    `Beach with HS friends!`,
+    `Matisse Exhibit, '22.`,
+    `My room <3.`,
+    `Playing tourist :).`
   ];
 
   const handleClick = () => {

@@ -93,7 +93,7 @@ function PortfolioPage() {
             </Grid>
 
             {/* Column Three */}
-            <Grid item xs={4}>
+            <Grid item xs={4} sx={{marginLeft: '-30px'}}>
               <Link to='https://shorturl.at/eKNY9' target="_blank" rel="noopener noreferrer">
                 <img src={cse} alt="csesoc-banners" style={{ maxWidth: '75%' }} />
               </Link>
@@ -120,7 +120,7 @@ function PortfolioPage() {
         </Grid>
 
         {/* The Right Hand Side: Titles */}
-        <Grid item xs={4}>
+        <Grid item xs={4} sx={{marginLeft: '-50px'}}>
           <Grid container spacing={0}>
             <Grid item xs={12}>
               <Typography

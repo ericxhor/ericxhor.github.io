@@ -1,10 +1,10 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from "./components/Header";
-// import FadeToBlack from './components/FadeToBlack';
 import HomePage from './pages/HomePage';
 import PortfolioPage from './pages/PortfolioPage';
 import AboutMePage from './pages/AboutMePage';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LogPage from './pages/LogPage';
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/my-portfolio" element={<PortfolioPage />} />
           <Route path="/about-me" element={<AboutMePage />} />
+          <Route path="/logs" element={<LogPage />} />
         </Routes>
       </div>
     </Router>
