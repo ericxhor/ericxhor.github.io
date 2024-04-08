@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
@@ -16,7 +16,9 @@ import timmy from "../../images/HomePage/timmy.jpg";
 
 function HeroSection() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = [cows, opera, book, slopes, beach, art, room, timmy];
+  const images = useMemo(() => [
+    cows, opera, book, slopes, beach, art, room, timmy
+  ], []);
   const captions = [
     `Cows, from camp.`,
     `Sydney, from a ferry.`,
@@ -37,7 +39,7 @@ function HeroSection() {
       const img = new Image();
       img.src = image;
     });
-  }, []);
+  }, [images]);
 
   return (
     <Box
