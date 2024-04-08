@@ -42,14 +42,14 @@ function AboutMePage() {
         {currentSegment === 1 && (
           <>
             <Grid item xs={4} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-              <img src={seg1_1} alt="me!" style={{ maxWidth: '100%', marginTop: '75px', marginLeft: '100px'  }}/>
+              <img src={seg1_1} alt="me!" style={{ maxWidth: '95%', marginTop: '75px', marginLeft: '100px'  }}/>
             </Grid>
             <Grid item xs={2} style={{display: "flex", flexDirection: 'column', alignItems: "flex-start", marginTop: '150px'}}>
               <img src={seg1_2} alt="selfie-with-friends" style={{ maxWidth: '80%', marginRight: '25px', marginBottom: '25px'  }}/>
               <Typography
                 variant="h5"
                 component="div"
-                sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: 'black'}}
+                sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: 'black', fontSize: '20px'}}
               >
                 I’m a Computer Science/Commerce student at UNSW. I used to study Actuarial Studies before deciding to switch things up; insurance policies, unfortunately, were not my calling.
               </Typography>
@@ -97,7 +97,7 @@ function AboutMePage() {
           <>
             <Grid item xs={12}>
               <Typography
-                variant="h2"
+                variant="h3"
                 component="div"
                 sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: 'black', marginLeft: '50px', marginTop: '50px', lineHeight: 1 }}
               >
@@ -105,8 +105,9 @@ function AboutMePage() {
               </Typography>
             </Grid>
 
-            <Grid item xs={3} style={{ marginTop: '-25px' }}>
-              <img src={seg3_1} alt="snowboarding" style={{ maxWidth: '75%', marginLeft: '50px' }}/>
+            {/* Snowboarding */}
+            <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '50px' }}>
+              <img src={seg3_1} alt="snowboarding" style={{ maxWidth: '75%' }}/>
               <Typography
                 variant="h6"
                 component="div"
@@ -115,16 +116,16 @@ function AboutMePage() {
                   textAlign: 'left',
                   fontFamily: 'Creato',
                   color: 'black',
-                  marginLeft: '50px',
                   lineHeight: 1.2,
-                  marginRight: '22px'
                 }}
               >
                 I've snowboarded once. <br/> It is now my identity.
               </Typography>
             </Grid>
-            <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-75px' }}>
-              <img src={seg3_2} alt="malatang" style={{ maxWidth: '100%' }}/>
+
+            {/* Malatang */}
+            <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-125px' }}>
+              <img src={seg3_2} alt="malatang" style={{ maxWidth: '90%' }}/>
               <Typography
                 variant="h6"
                 component="div"
@@ -136,12 +137,16 @@ function AboutMePage() {
                   lineHeight: 1.2
                 }}
               >
-                I had to mention malatang is my OTL.
+                I had to mention malatang, <br/> it is also my identity..
               </Typography>
             </Grid>
-            
-            <Grid item xs={3} style={{ marginTop: '-25px' }}>
-              <img src={seg3_3} alt="book" style={{ maxWidth: '80%', marginLeft: '-50px'  }}/>
+
+            {/* Malatang */}
+            <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-75px' }}>
+              <Link to="https://open.spotify.com/playlist/2T3aOlXG4KoCkIGNJVVQtC?si=383f1d26d8fe4b54" target="_blank" rel="noopener noreferrer">
+                https://shorturl.at/ABTZ3
+              </Link>
+              <img src={seg3_3} alt="book" style={{ maxWidth: '80%' }}/>
               <Typography
                 variant="h6"
                 component="div"
@@ -150,19 +155,18 @@ function AboutMePage() {
                   textAlign: 'left',
                   fontFamily: 'Creato',
                   color: 'black',
-                  lineHeight: 1.2,
-                  marginLeft: '-50px',
-                  marginRight: '100px'
+                  lineHeight: 1.2
                 }}
               >
-                My Reading Notion Page is linked
-                (I did not like A Little Life).
+                My Reading Notion Page is <br/> linked
+                (Fun fact: I didn't like <br/> A Little Life).
               </Typography>
             </Grid>
 
-            <Grid item xs={3} style={{ marginTop: '-25px' }}>
-              <Link to="https://open.spotify.com/playlist/2T3aOlXG4KoCkIGNJVVQtC?si=383f1d26d8fe4b54">
-                <img src={seg3_4} alt="spotify" style={{ maxWidth: '100%', marginLeft: '-150px' }} cursor='pointer'/>
+            {/* Spotify */}
+            <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-110px' }}>
+              <Link to="https://open.spotify.com/playlist/2T3aOlXG4KoCkIGNJVVQtC?si=383f1d26d8fe4b54" target="_blank" rel="noopener noreferrer">
+                <img src={seg3_4} alt="spotify" style={{ maxWidth: '90%' }} cursor='pointer'/>
               </Link>
               <Typography
                 variant="h6"
@@ -172,8 +176,7 @@ function AboutMePage() {
                   textAlign: 'left',
                   fontFamily: 'Creato',
                   color: 'black',
-                  lineHeight: 1.2,
-                  marginLeft: '-150px'
+                  lineHeight: 1.2
                 }}
               >
                 I have also linked my current <br/> go-to Spotify playlist.
@@ -189,7 +192,7 @@ function AboutMePage() {
               <Typography
                 variant="h2"
                 component="div"
-                sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: 'black', marginLeft: '50px', marginTop: '50px', lineHeight: 1 }}
+                sx={{ flexGrow: 1, textAlign: 'left', fontFamily: 'Creato', color: 'black', marginLeft: '50px', marginTop: '150px', lineHeight: 1 }}
               >
                 I hope you enjoyed this (short) <br/> summary of me!
               </Typography>
@@ -209,7 +212,7 @@ function AboutMePage() {
               </Typography>
             </Grid>
             <Grid item xs={4}>
-              <img src={doggy} alt="polaroid" style={{ maxWidth: '75%', marginTop: '250px', marginBottom: '100px' }}/>
+              <img src={doggy} alt="polaroid" style={{ maxWidth: '75%', marginTop: '250px' }}/>
             </Grid>
           </>
         )}
@@ -219,13 +222,11 @@ function AboutMePage() {
             {currentSegment > 1 && (
               <span style={{ cursor: 'pointer', position: 'absolute', left: '25px', bottom: '25px' }} onClick={() => handleSegmentChange(currentSegment - 1)}>
                 ← Going back
-                {/* <ArrowBackIcon sx={{ fontSize: '5rem' }} /> */}
               </span>
             )}
             {currentSegment < TOTAL_SEGMENTS && (
               <span style={{ cursor: 'pointer', position: 'absolute', right: '25px', bottom: '25px' }} onClick={() => handleSegmentChange(currentSegment + 1)}>
                 Let's move on →
-                {/* <ArrowForwardIcon sx={{ fontSize: '5rem' }} /> */}
               </span>
             )}
           </Typography>

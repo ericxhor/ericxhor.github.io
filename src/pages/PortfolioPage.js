@@ -59,7 +59,7 @@ function PortfolioPage() {
             {/* Column Two */}
             <Grid item xs={4}>
               <Link to='https://shorturl.at/kxJ67' target="_blank" rel="noopener noreferrer">
-                <img src={tuber}  alt="tuber" style={{ maxWidth: '100%' }} />
+                <img src={tuber}  alt="tuber" style={{ maxWidth: '90%' }} />
               </Link>
               <Typography
                 variant="h5"
@@ -69,7 +69,9 @@ function PortfolioPage() {
                 03
               </Typography>
 
-              <img src={nab} alt="nab-case-comp" style={{ width: '100%', marginTop: '10px' }} />
+              <Link to='https://shorturl.at/zJP39' target="_blank" rel="noopener noreferrer">
+                <img src={nab} alt="nab-case-comp" style={{ width: '90%', marginTop: '10px' }} />
+              </Link>
               <Typography
                 variant="h5"
                 component="div"
@@ -79,7 +81,7 @@ function PortfolioPage() {
               </Typography>
 
               <Link to='https://shorturl.at/axWY6' target="_blank" rel="noopener noreferrer">
-                <img src={tsg} alt="tsg-case-comp" style={{ maxWidth: '100%', marginTop: '10px' }} />
+                <img src={tsg} alt="tsg-case-comp" style={{ maxWidth: '90%', marginTop: '10px' }} />
               </Link>
               <Typography
                 variant="h5"
