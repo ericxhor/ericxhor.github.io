@@ -55,7 +55,7 @@ export default function Header() {
                     </Typography>
                 </Link>
                 <Link
-                    to="/logs"
+                    to="/contact-me"
                     style={{ textDecoration: "none", color: "black" }}
                 >
                     <Typography 

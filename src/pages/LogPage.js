@@ -27,7 +27,7 @@ function LogPage() {
             lineHeight={1.25}
             fontSize={50}
             component="div"
-            sx={{ textAlign: 'left', fontFamily: 'Creato Medium', color: 'black', marginLeft: '50px'}}
+            sx={{ textAlign: 'left', fontFamily: 'Creato', color: 'black', marginLeft: '50px'}}
           >
             Reach out to me to talk about anything!
           </Typography>
@@ -36,7 +36,7 @@ function LogPage() {
         <Grid item xs={8} style={{marginTop: '100px'}}>
           <Typography
             lineHeight={1.25}
-            fontSize={35}
+            fontSize={30}
             component="div"
             sx={{ textAlign: 'left', fontFamily: 'Creato', color: 'black', marginLeft: '50px'}}
           >
@@ -45,12 +45,11 @@ function LogPage() {
 
             LinkedIn <br/>
             https://www.linkedin.com/in/eric-hor-ba8b771b4/ <br/>
-
           </Typography>
         </Grid>
       </Grid>
 
-      <Grid container direction="row" alignItems="flex-end" spacing={5} style={{ marginTop: '25px'}}>
+      <Grid container direction="row" alignItems="flex-end" spacing={5} style={{ marginTop: '50px'}}>
         <Grid item xs={6}>
           <img src={monkeys} style={{ maxWidth: '28%', height: 'auto', marginLeft: '50px' }} alt="one" />
           <img src={crocs} style={{ maxWidth: '25%', height: 'auto', marginLeft: '25px', marginBottom: '50px' }} alt="one" />

@@ -207,7 +207,7 @@ function AboutMePage() {
                 component="div"
                 sx={{ flexGrow: 1, textAlign: 'right', fontFamily: 'Creato', color: 'black', marginRight: '280px',  marginTop: '25px' }}
               >
-                <Link to="/about-me" style={{ textDecoration: 'underline', color: 'black' }}>Contact me.</Link>
+                <Link to="/contact-me" style={{ textDecoration: 'underline', color: 'black' }}>Contact me.</Link>
               </Typography>
             </Grid>
             <Grid item xs={4}>
