@@ -143,7 +143,7 @@ function AboutMePage() {
 
             {/* Malatang */}
             <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-75px' }}>
-              <Link to="https://open.spotify.com/playlist/2T3aOlXG4KoCkIGNJVVQtC?si=383f1d26d8fe4b54" target="_blank" rel="noopener noreferrer">
+              <Link to="https://shorturl.at/bfwzL" target="_blank" rel="noopener noreferrer">
                 <img src={seg3_3} alt="book" style={{ maxWidth: '80%' }}/>
               </Link>
               <Typography
