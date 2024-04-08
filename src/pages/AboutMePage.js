@@ -137,7 +137,7 @@ function AboutMePage() {
                   lineHeight: 1.2
                 }}
               >
-                I had to mention malatang, <br/> (it is also my identity).
+                I had to mention malatang <br/> (it is also my identity).
               </Typography>
             </Grid>
 
