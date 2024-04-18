@@ -143,7 +143,7 @@ function AboutMePage() {
 
             {/* Malatang */}
             <Grid item xs={3} style={{ marginTop: '-25px', marginLeft: '-75px' }}>
-              <Link to="https://shorturl.at/bfwzL" target="_blank" rel="noopener noreferrer">
+              <Link to="https://sparkly-spell-6c1.notion.site/read-a-book-ea45b07be9784997a7ba13db9f754446?pvs=4" target="_blank" rel="noopener noreferrer">
                 <img src={seg3_3} alt="book" style={{ maxWidth: '80%' }}/>
               </Link>
               <Typography
