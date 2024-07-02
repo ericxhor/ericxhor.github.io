@@ -70,6 +70,7 @@ export default function Header() {
                 <Link
                     to="/about-me"
                     style={{ textDecoration: "none", color: "white" }}
+                    onClick={handleMenuClick}
                 >
                     <li>General Interests</li>
                 </Link>
@@ -77,6 +78,7 @@ export default function Header() {
                 <Link
                     to="/my-portfolio"
                     style={{ textDecoration: "none", color: "white" }}
+                    onClick={handleMenuClick}
                 >
                     <li>Design Portfolio</li>
                 </Link>
@@ -91,6 +93,7 @@ export default function Header() {
                 <Link
                     to="/contact-me"
                     style={{ textDecoration: "none", color: "white" }}
+                    onClick={handleMenuClick}
                 >
                     <li>Contact Me</li>
                 </Link>
