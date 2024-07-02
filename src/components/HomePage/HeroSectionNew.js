@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
 
-import bg from "../../images/paper-bg.jpg";
+// import bg from "../../images/paper-bg.jpg";
 
 import cows from "../../images/HomePage/cows.JPG";
 import opera from "../../images/HomePage/opera-2.jpg";
@@ -30,6 +30,12 @@ function HeroSection() {
     `Playing tourist :).`
   ];
 
+  // const headingStyle = {
+  //   fontFamily: 'Creato',
+  //   color: 'black',
+  //   lineHeight: '1em' 
+  // };
+
   const handleClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -42,35 +48,36 @@ function HeroSection() {
   }, [images]);
 
   return (
-    <Box
-      className="home-content"
-      sx={{
-        backgroundImage: `url(${bg})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-      }}
-    >
-      <Grid container spacing={0}>
-        <Grid item xs={6} sx={{ display: 'flex', alignItems: 'center' }}>
-          <Box sx={{ textAlign: 'left', marginLeft: '50px' }}> 
-            <Typography component="div" sx={{  fontSize: '5rem', fontFamily: 'Creato Medium', color: 'black', lineHeight: '0.9em', marginBottom: '25px' }}>
-                <span style={{ fontWeight: 'bold' }}>eric's <br /> website.</span>
+    // <Box
+    //   className="home-content"
+    //   sx={{
+    //     // backgroundImage: `url(${bg})`,
+    //     backgroundSize: 'cover',
+    //     backgroundPosition: 'center',
+    //     minHeight: "100vh",
+    //     display: "flex",
+    //     alignItems: "center",
+    //     justifyContent: "center"
+    //   }}
+    // >
+      <Grid container>
+        <Grid item xs={6}>
+          <Box sx={{ textAlign: 'center',  display: 'flex', justifyContent: 'center', height: '100vh' }}> 
+            <Typography component="div" sx={{  fontSize: '6rem', letterSpacing: '-1px', fontFamily: 'Creato', color: 'black', lineHeight: '0.9em', marginTop: '64px' }}>
+                my virtual<br />
+                representation
             </Typography>
-            <Typography variant="h5" component="div" sx={{ fontFamily: 'Creato', color: 'black', lineHeight: '1em' }}>
-                Welcome to <br />my collection of
+            {/* <Typography variant="h5" component="div" sx={headingStyle}>
+                Welcome to my collection of
             </Typography>
-            <Typography variant="h5" component="div" sx={{ fontFamily: 'Creato', color: 'black', lineHeight: '1em', marginLeft: '25px' }}>
-                my designs,<br />
-                my code,<br />
-                my resume and<br />
+            <Typography variant="h5" component="div" sx={headingStyle}>
+                my designs <br/>
+                my code
+                and
             </Typography>
-            <Typography variant="h5" component="div" sx={{ fontFamily: 'Creato', color: 'black', lineHeight: '1em', marginLeft: '0px' }}>
+            <Typography variant="h5" component="div" sx={headingStyle}>
                 my general interests.
-            </Typography>
+            </Typography> */}
             <Typography variant="h6" component="div" sx={{
                 fontFamily: 'Creato',
                 color: 'black',
@@ -116,7 +123,7 @@ function HeroSection() {
           />
         </Grid>
       </Grid>
-    </Box>
+    // </Box>
   );
 }
 
