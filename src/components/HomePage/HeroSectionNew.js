@@ -30,12 +30,6 @@ function HeroSection() {
     `Playing tourist :).`
   ];
 
-  // const headingStyle = {
-  //   fontFamily: 'Creato',
-  //   color: 'black',
-  //   lineHeight: '1em' 
-  // };
-
   const handleClick = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
@@ -48,18 +42,6 @@ function HeroSection() {
   }, [images]);
 
   return (
-    // <Box
-    //   className="home-content"
-    //   sx={{
-    //     // backgroundImage: `url(${bg})`,
-    //     backgroundSize: 'cover',
-    //     backgroundPosition: 'center',
-    //     minHeight: "100vh",
-    //     display: "flex",
-    //     alignItems: "center",
-    //     justifyContent: "center"
-    //   }}
-    // >
       <Grid container>
         <Grid item xs={6}>
           <Box sx={{ textAlign: 'center',  display: 'flex', justifyContent: 'center', height: '100vh' }}> 
@@ -67,24 +49,14 @@ function HeroSection() {
                 my virtual<br />
                 representation
             </Typography>
-            {/* <Typography variant="h5" component="div" sx={headingStyle}>
-                Welcome to my collection of
-            </Typography>
-            <Typography variant="h5" component="div" sx={headingStyle}>
-                my designs <br/>
-                my code
-                and
-            </Typography>
-            <Typography variant="h5" component="div" sx={headingStyle}>
-                my general interests.
-            </Typography> */}
             <Typography variant="h6" component="div" sx={{
                 fontFamily: 'Creato',
                 color: 'black',
                 lineHeight: '1em',
                 position: 'absolute',
                 bottom: '50px',
-                left: '50px' 
+                left: '50px',
+                textAlign: 'left'
             }}>
                 (Psst, click on the picture <br/> for it to change)
             </Typography>
@@ -123,7 +95,6 @@ function HeroSection() {
           />
         </Grid>
       </Grid>
-    // </Box>
   );
 }
 

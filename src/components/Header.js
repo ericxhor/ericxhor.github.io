@@ -7,6 +7,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
+import Slide from "@mui/material/Slide";
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
@@ -21,20 +22,29 @@ export default function Header() {
         <AppBar 
             position="fixed"
             sx={{
-                backgroundColor: 'transparent',
+                backgroundColor: overlayVisible ? 'black' : 'white',
                 boxShadow: 'none',
                 zIndex: 1000,
+                height: '50px',
+                borderBottom: '1px solid #000'
             }}
         >
-            <Toolbar>
+            <Toolbar
+                sx={{
+                    height: '50px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
+                }}
+            >
                 <Link
                     to="/"
-                    style={{ textDecoration: "none", color: "black"}}
+                    style={{ textDecoration: "none", color: overlayVisible ? 'white' : 'black'}}
                     onClick={ overlayVisible ? handleMenuClick : undefined }
                 >
                     <Typography
                         variant="h5"
-                        sx={{ textAlign: 'left', fontFamily: 'Creato Medium' }}
+                        sx={{ textAlign: 'left', fontFamily: 'Creato Medium', marginTop: '-15px' }}
                     >
                         eric's website
                     </Typography>
@@ -43,6 +53,7 @@ export default function Header() {
                     sx={{
                         color: overlayVisible ? 'white' : 'black',
                         fontSize: '2rem',
+                        marginTop: '-15px',
                         marginLeft: 'auto',
                         transition: 'color 0.2s ease'
                     }}
@@ -50,56 +61,68 @@ export default function Header() {
                 />
             </Toolbar>
         </AppBar>
+        <Slide in={overlayVisible}>
+            <Box
+                sx={{
+                    position: 'fixed',
+                    top: 0,
+                    width: '100%',
+                    height: '35%',
+                    backgroundColor: 'black',
+                    zIndex: 999
+                }}
+            >    
+                <Typography variant="h4" component="div" sx={{
+                    fontFamily: 'Creato',
+                    color: 'white',
+                    lineHeight: '1em',
+                    marginTop: '64px',
+                    marginLeft: '50px'
+                }}>
+                    <Link
+                        to="/about-me"
+                        style={{ textDecoration: "none", color: "white" }}
+                        onClick={handleMenuClick}
+                    >
+                        About Me<br/>
+                    </Link>
+                    Coding Stack<br/>
+                    <Link
+                        to="/my-portfolio"
+                        style={{ textDecoration: "none", color: "white" }}
+                        onClick={handleMenuClick}
+                    >
+                        Design Portfolio<br/>
+                    </Link>
+                    <Link
+                        to="https://github.com/ericxhor"
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        style={{ textDecoration: "none", color: "white" }}
+                    >
+                        GitHub<br/>
+                    </Link>
+                    <Link
+                        to="/contact-me"
+                        style={{ textDecoration: "none", color: "white" }}
+                        onClick={handleMenuClick}
+                    >
+                        Contact Me<br/>
+                    </Link>
+                </Typography>
+            </Box>
+        </Slide>
         <Fade in={overlayVisible}>
             <Box 
                 sx={{
                     position: 'fixed',
                     top: 0,
-                    right: 0,
-                    width: '50%',
+                    width: '100%',
                     height: '100%',
                     backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                    zIndex: 999
+                    zIndex: 998
                 }}
-            >
-            <Typography variant="h2" component="div" sx={{
-                fontFamily: 'Creato',
-                color: 'white',
-                lineHeight: '1em',
-                padding: '50px'
-            }}>
-                <Link
-                    to="/about-me"
-                    style={{ textDecoration: "none", color: "white" }}
-                    onClick={handleMenuClick}
-                >
-                    <li>General Interests</li>
-                </Link>
-                <li>Coding Stack</li>
-                <Link
-                    to="/my-portfolio"
-                    style={{ textDecoration: "none", color: "white" }}
-                    onClick={handleMenuClick}
-                >
-                    <li>Design Portfolio</li>
-                </Link>
-                <Link
-                    to="https://github.com/ericxhor"
-                    target="_blank"
-                    rel="noopener noreferrer" 
-                    style={{ textDecoration: "none", color: "white" }}
-                >
-                    <li>GitHub</li>
-                </Link>
-                <Link
-                    to="/contact-me"
-                    style={{ textDecoration: "none", color: "white" }}
-                    onClick={handleMenuClick}
-                >
-                    <li>Contact Me</li>
-                </Link>
-            </Typography>
-            </Box>
+            />
         </Fade>
         </>
     );
