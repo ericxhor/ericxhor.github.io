@@ -30,6 +30,7 @@ export default function Header() {
                 <Link
                     to="/"
                     style={{ textDecoration: "none", color: "black"}}
+                    onClick={ overlayVisible ? handleMenuClick : undefined }
                 >
                     <Typography
                         variant="h5"
