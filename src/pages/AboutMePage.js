@@ -5,7 +5,7 @@ import Grid from '@mui/material/Grid';
 import Typography from "@mui/material/Typography";
 import { Link } from 'react-router-dom';
 
-import bg from "../images/paper-bg.jpg";
+// import bg from "../images/paper-bg.jpg";
 import seg1_1 from "../images/AboutMePage/seg1-1.jpg";
 import seg1_2 from "../images/AboutMePage/seg1-2.JPG";
 import cambodia from "../images/AboutMePage/cambodia.jpg";
@@ -28,7 +28,7 @@ function AboutMePage() {
     <Box
       className="home-content"
       sx={{
-        backgroundImage: `url(${bg})`,
+        // backgroundImage: `url(${bg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: "100vh",
@@ -42,7 +42,7 @@ function AboutMePage() {
         {currentSegment === 1 && (
           <>
             <Grid item xs={4} style={{display: "flex", alignItems: "center", justifyContent: "center"}}>
-              <img src={seg1_1} alt="me!" style={{ maxWidth: '95%', marginTop: '75px', marginLeft: '100px'  }}/>
+              <img src={seg1_1} alt="me!" style={{ maxWidth: '95%', marginLeft: '100px'  }}/>
             </Grid>
             <Grid item xs={2} style={{display: "flex", flexDirection: 'column', alignItems: "flex-start", marginTop: '150px'}}>
               <img src={seg1_2} alt="selfie-with-friends" style={{ maxWidth: '80%', marginRight: '25px', marginBottom: '25px'  }}/>
