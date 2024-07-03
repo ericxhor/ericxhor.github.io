@@ -8,7 +8,8 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Fade from "@mui/material/Fade";
 import Slide from "@mui/material/Slide";
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
+import Hamburger from 'hamburger-react'
 
 export default function Header() {
     const [overlayVisible, setOverlayVisible] = React.useState(false);
@@ -44,12 +45,20 @@ export default function Header() {
                 >
                     <Typography
                         variant="h5"
-                        sx={{ textAlign: 'left', fontFamily: 'Creato Medium', marginTop: '-15px' }}
+                        sx={{ textAlign: 'left', fontFamily: 'Creato Medium', marginTop: '-15px', transition: 'color 0.2s ease' }}
                     >
                         eric's website
                     </Typography>
                 </Link>
-                <MenuIcon
+                <Box sx={{ marginTop: '-15px', marginRight: '-20px' }}>
+                    <Hamburger
+                        toggled={overlayVisible}
+                        toggle={handleMenuClick}
+                        color={overlayVisible ? '#FFFFFF' : '#000000'}
+                        size={25}
+                    />
+                </Box>
+                {/* <MenuIcon
                     sx={{
                         color: overlayVisible ? 'white' : 'black',
                         fontSize: '2rem',
@@ -58,7 +67,7 @@ export default function Header() {
                         transition: 'color 0.2s ease'
                     }}
                     onClick={handleMenuClick}
-                />
+                /> */}
             </Toolbar>
         </AppBar>
         <Slide in={overlayVisible}>
@@ -67,7 +76,7 @@ export default function Header() {
                     position: 'fixed',
                     top: 0,
                     width: '100%',
-                    height: '35%',
+                    height: '280px',
                     backgroundColor: 'black',
                     zIndex: 999
                 }}

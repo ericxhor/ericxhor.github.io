@@ -19,7 +19,7 @@ function PortfolioPage() {
     <Box
       className="home-content"
       sx={{
-        backgroundImage: `url(${bg})`,
+        // backgroundImage: `url(${bg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         minHeight: "100vh",
