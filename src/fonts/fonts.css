@@ -12,6 +12,11 @@
 
 @font-face {
     font-family: 'Apple-Garamond';
-    src: local('Apple-Garamond'), url('AppleGaramond.ttf') format('truetype');
+    src: local('Apple-Garamond'), url('AppleGaramond-Light.ttf') format('truetype');
+}
+  
+@font-face {
+    font-family: 'Riccione-Serial';
+    src: local('Riccione-Serial'), url('RiccioneSerial-XLight.ttf') format('truetype');
 }
   
